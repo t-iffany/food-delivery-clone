@@ -7,7 +7,7 @@ import {
   MagnifyingGlassIcon,
   AdjustmentsVerticalIcon,
 } from 'react-native-heroicons/outline';
-import Categories from '../components/categories';
+import Categories from '../components/Categories';
 
 const HomeScreen = () => {
 
@@ -21,9 +21,8 @@ const HomeScreen = () => {
 
   return (
     <SafeAreaView className="bg-white pt-5">
-      {/* <Text className="text-red-500"> */}
         {/* header */}
-        <View className="flex-row pb-3 items-center mx-4 space-x-2 px-4">
+        <View className="flex-row pb-3 items-center mx-4 space-x-2">
           <Image 
             source={{
               uri: "https://links.papareact.com/wru"
@@ -45,7 +44,7 @@ const HomeScreen = () => {
         </View>
 
         {/* search bar */}
-        <View className="flex-row items-center space-x-2 pb-2 mx-4 px-4">
+        <View className="flex-row items-center space-x-2 pb-2 mx-4">
           <View className="flex-row flex-1 space-x-2 bg-gray-200 p-3">
             <MagnifyingGlassIcon color="gray" size={20} />
             <TextInput 
@@ -56,7 +55,6 @@ const HomeScreen = () => {
 
           <AdjustmentsVerticalIcon color="#00CCBB" />
         </View>
-      {/* </Text> */}
       {/* body */}
       <ScrollView className="bg-gray-100">
         {/* categories section with slider */}
